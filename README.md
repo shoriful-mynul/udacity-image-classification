@@ -97,7 +97,8 @@ udacity-image-classification/
 ├── run_models_batch.bat
 └── README.md
 
-Results
+```text
+## Results
 
 The three CNN architectures were evaluated using the same 40-image test set.
 
@@ -105,7 +106,9 @@ Model	Dog Accuracy	Not-Dog Accuracy	Breed Accuracy	Overall Match
 AlexNet	100.0%	100.0%	80.0%	75.0%
 ResNet	100.0%	90.0%	90.0%	82.5%
 VGG	100.0%	100.0%	93.3%	87.5%
-Model Comparison
+
+## Model Comparison
+
 AlexNet
 
 AlexNet correctly classified all 30 dog images and all 10 non-dog images.
@@ -148,7 +151,7 @@ Overall match: 87.5%
 VGG achieved both perfect dog/non-dog classification on this test set and the
 highest breed classification accuracy.
 
-Best Performing Model
+## Best Performing Model
 
 Based on the results from the 40-image test set, VGG performed the best.
 
@@ -180,7 +183,7 @@ Classifier label: walker hound, walker foxhound
 These results show that the classifier can correctly identify that an image
 contains a dog even when it cannot identify the exact breed.
 
-How to Run
+## How to Run
 
 The project can be executed from the project directory using Python.
 
