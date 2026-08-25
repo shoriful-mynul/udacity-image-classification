@@ -40,34 +40,6 @@ non-dog animals.
 | ResNet | 100% | 90.0% | 90.0% | 82.5% |
 | VGG | 100% | 100% | 93.3% | 87.5% |
 
-## Best Model
-
-VGG achieved the best overall performance on the 40-image test set.
-
-It achieved:
-
-- **100% dog classification accuracy**
-- **100% non-dog classification accuracy**
-- **93.3% breed classification accuracy**
-- **87.5% overall match**
-
-Based on these results, VGG performed better than AlexNet and ResNet on
-this test set.
-
-## Incorrectly Classified Dog Breeds
-
-The VGG model incorrectly classified two dog breeds in the test set:
-
-- `Great_pyrenees_05367.jpg`
-  - Actual breed: Great Pyrenees
-  - Predicted breed: Kuvasz
-
-- `Beagle_01170.jpg`
-  - Actual breed: Beagle
-  - Predicted breed: Walker Hound / Walker Foxhound
-
-These results show that the model was able to correctly identify most dogs,
-but some visually similar dog breeds can still be difficult to distinguish.
 
 ## Project Structure
 
