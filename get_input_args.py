@@ -3,6 +3,7 @@
 
 import argparse
 
+
 def get_input_args():
     """
     Retrieves and parses the 3 command line arguments provided by the user when
@@ -14,7 +15,7 @@ def get_input_args():
     parser.add_argument(
         '--dir',
         type=str,
-        default='pet_images',
+        default='pet_images/',
         help='path to the folder of pet images'
     )
 
