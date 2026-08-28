@@ -1,6 +1,7 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+import os
 
 from classifier import classifier
 
@@ -13,17 +14,15 @@ def classify_images(images_dir, results_dic, model):
     """
 
     for key in results_dic:
+        # Build the image path safely regardless of whether images_dir ends
+        # with a slash.
+        image_path = os.path.join(images_dir, key)
 
-        # Get the classifier label for the current image
-        classifier_label = classifier(
-            images_dir + '/' + key,
-            model
-        )
-
-        # Format classifier label
+        # Get the classifier label for the current image.
+        classifier_label = classifier(image_path, model)
         classifier_label = classifier_label.lower().strip()
 
-        # Compare pet label with classifier label
+        # Compare pet label with classifier label.
         pet_label = results_dic[key][0]
 
         if pet_label in classifier_label:
