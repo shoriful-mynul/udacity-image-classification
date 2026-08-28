@@ -8,12 +8,16 @@ def adjust_results4_isadog(results_dic, dogfile):
     and classifier label are dogs or not dogs.
     """
 
-    # Read each complete dog-label entry from dognames.txt.
-    # Some entries contain commas because they represent one classifier
-    # label with multiple accepted names, for example:
-    # "eskimo dog, husky".
+    # dognames.txt may contain several accepted names on one line, separated
+    # by commas. Expand each line into individual accepted names, while
+    # keeping the classifier label itself intact.
+    dognames = set()
     with open(dogfile, "r") as f:
-        dognames = set(line.strip().lower() for line in f if line.strip())
+        for line in f:
+            for name in line.strip().lower().split(","):
+                name = name.strip()
+                if name:
+                    dognames.add(name)
 
     for key in results_dic:
         # Determine whether the actual pet is a dog.
@@ -21,8 +25,9 @@ def adjust_results4_isadog(results_dic, dogfile):
         is_pet_dog = 1 if pet_label in dognames else 0
 
         # Determine whether the classifier thinks the image is a dog.
-        # Match the complete classifier label against the complete entries
-        # in dognames.txt instead of splitting comma-separated labels.
+        # Do NOT split the classifier label. A label such as
+        # "eskimo dog, husky" is one classifier result and must be matched
+        # against the accepted names as a complete label or alias.
         classifier_label = results_dic[key][1].strip().lower()
         is_classifier_dog = 1 if classifier_label in dognames else 0
 
