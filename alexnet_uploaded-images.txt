@@ -1,0 +1,96 @@
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                      dog_1.jpg  label:                        dog
+ 2 key:                      cat_1.jpg  label:                        cat
+ 3 key:                     bird_1.jpg  label:                       bird
+ 4 key:                      dog_2.jpg  label:                        dog
+
+     MATCH:
+
+                     cat_1.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+ NOT A MATCH:
+
+                     dog_1.jpg: 
+Real:                        dog   Classifier:                       bluetick
+
+                    bird_1.jpg: 
+Real:                       bird   Classifier:                      bee eater
+
+                     dog_2.jpg: 
+Real:                        dog   Classifier: seashore, coast, seacoast, sea-coast
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                     cat_1.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                     dog_1.jpg: 
+Real:                        dog   Classifier:                       bluetick  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    bird_1.jpg: 
+Real:                       bird   Classifier:                      bee eater  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                     dog_2.jpg: 
+Real:                        dog   Classifier: seashore, coast, seacoast, sea-coast  
+PetLabelDog: 1  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+Results Summary
+----------------------------------------
+Model architecture: alexnet
+Total images: 4
+Dog images: 2
+Not-dog images: 2
+Correct label matches: 1
+Correctly classified dogs: 1
+Correctly classified not-dogs: 2
+Correctly classified breeds: 0
+
+Accuracy
+----------------------------------------
+Dog accuracy: 50.0
+Not-dog accuracy: 100.0
+Breed accuracy: 0.0
+Overall match: 25.0
+
+Incorrectly Classified Dogs
+----------------------------------------
+dog_2.jpg Pet label: dog Classifier label: seashore, coast, seacoast, sea-coast
+
+Incorrectly Classified Dog Breeds
+----------------------------------------
+dog_1.jpg Pet label: dog Classifier label: bluetick
+dog_2.jpg Pet label: dog Classifier label: seashore, coast, seacoast, sea-coast
+
+** Total Elapsed Runtime: 0:0:2

@@ -1,0 +1,102 @@
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 29%|██▊       | 12.8M/44.7M [00:00<00:00, 132MB/s] 71%|███████   | 31.6M/44.7M [00:00<00:00, 170MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 153MB/s]
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth" to /root/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth
+  0%|          | 0.00/233M [00:00<?, ?B/s]  6%|▋         | 15.0M/233M [00:00<00:01, 157MB/s] 15%|█▍        | 34.8M/233M [00:00<00:01, 186MB/s] 23%|██▎       | 52.5M/233M [00:00<00:01, 186MB/s] 31%|███       | 71.4M/233M [00:00<00:00, 190MB/s] 39%|███▊      | 90.2M/233M [00:00<00:00, 193MB/s] 47%|████▋     | 109M/233M [00:00<00:00, 160MB/s]  54%|█████▎    | 125M/233M [00:00<00:00, 157MB/s] 60%|██████    | 140M/233M [00:00<00:00, 154MB/s] 67%|██████▋   | 156M/233M [00:00<00:00, 156MB/s] 74%|███████▎  | 171M/233M [00:01<00:00, 158MB/s] 81%|████████  | 188M/233M [00:01<00:00, 162MB/s] 87%|████████▋ | 204M/233M [00:01<00:00, 163MB/s] 94%|█████████▍| 220M/233M [00:01<00:00, 162MB/s]100%|██████████| 233M/233M [00:01<00:00, 166MB/s]
+/usr/local/lib/python3.13/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/vgg16-397923af.pth" to /root/.cache/torch/hub/checkpoints/vgg16-397923af.pth
+  0%|          | 0.00/528M [00:00<?, ?B/s]  3%|▎         | 13.2M/528M [00:00<00:03, 138MB/s]  5%|▌         | 28.9M/528M [00:00<00:03, 152MB/s]  9%|▊         | 45.8M/528M [00:00<00:03, 163MB/s] 12%|█▏        | 62.5M/528M [00:00<00:02, 168MB/s] 15%|█▌        | 79.4M/528M [00:00<00:02, 171MB/s] 18%|█▊        | 95.8M/528M [00:00<00:02, 152MB/s] 21%|██        | 111M/528M [00:00<00:03, 143MB/s]  24%|██▍       | 126M/528M [00:00<00:02, 148MB/s] 27%|██▋       | 140M/528M [00:01<00:03, 127MB/s] 29%|██▉       | 153M/528M [00:01<00:03, 112MB/s] 31%|███       | 164M/528M [00:01<00:03, 101MB/s] 33%|███▎      | 174M/528M [00:01<00:03, 95.6MB/s] 35%|███▍      | 184M/528M [00:01<00:03, 94.7MB/s] 37%|███▋      | 193M/528M [00:01<00:03, 95.9MB/s] 38%|███▊      | 203M/528M [00:01<00:03, 96.7MB/s] 40%|████      | 212M/528M [00:01<00:03, 97.8MB/s] 42%|████▏     | 222M/528M [00:01<00:03, 95.2MB/s] 44%|████▍     | 231M/528M [00:02<00:03, 94.0MB/s] 46%|████▌     | 241M/528M [00:02<00:03, 96.1MB/s] 47%|████▋     | 250M/528M [00:02<00:03, 91.3MB/s] 49%|████▉     | 261M/528M [00:02<00:02, 96.3MB/s] 51%|█████     | 270M/528M [00:02<00:02, 92.9MB/s] 53%|█████▎    | 279M/528M [00:02<00:02, 87.1MB/s] 54%|█████▍    | 288M/528M [00:02<00:03, 83.5MB/s] 56%|█████▌    | 296M/528M [00:02<00:02, 82.8MB/s] 58%|█████▊    | 304M/528M [00:02<00:02, 79.7MB/s] 59%|█████▉    | 312M/528M [00:03<00:02, 77.4MB/s] 61%|██████    | 321M/528M [00:03<00:02, 82.4MB/s] 62%|██████▏   | 329M/528M [00:03<00:02, 84.7MB/s] 64%|██████▍   | 338M/528M [00:03<00:02, 84.3MB/s] 66%|██████▌   | 348M/528M [00:03<00:02, 89.8MB/s] 68%|██████▊   | 358M/528M [00:03<00:01, 94.6MB/s] 70%|██████▉   | 367M/528M [00:03<00:01, 89.7MB/s] 71%|███████   | 376M/528M [00:03<00:01, 84.4MB/s] 73%|███████▎  | 384M/528M [00:03<00:01, 80.2MB/s] 74%|███████▍  | 392M/528M [00:04<00:01, 80.8MB/s] 76%|███████▌  | 400M/528M [00:04<00:01, 79.0MB/s] 77%|███████▋  | 408M/528M [00:04<00:01, 82.2MB/s] 79%|███████▉  | 417M/528M [00:04<00:01, 83.7MB/s] 80%|████████  | 425M/528M [00:04<00:01, 84.0MB/s] 82%|████████▏ | 435M/528M [00:04<00:01, 89.7MB/s] 84%|████████▍ | 444M/528M [00:04<00:00, 91.6MB/s] 86%|████████▌ | 453M/528M [00:04<00:00, 90.4MB/s] 87%|████████▋ | 462M/528M [00:04<00:00, 86.1MB/s] 89%|████████▉ | 470M/528M [00:05<00:00, 82.8MB/s] 91%|█████████ | 478M/528M [00:05<00:00, 80.8MB/s] 92%|█████████▏| 486M/528M [00:05<00:00, 82.4MB/s] 94%|█████████▍| 495M/528M [00:05<00:00, 84.3MB/s] 95%|█████████▌| 504M/528M [00:05<00:00, 86.9MB/s] 97%|█████████▋| 512M/528M [00:05<00:00, 82.6MB/s] 99%|█████████▊| 521M/528M [00:05<00:00, 84.0MB/s]100%|██████████| 528M/528M [00:05<00:00, 96.4MB/s]
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                      dog_1.jpg  label:                        dog
+ 2 key:                      cat_1.jpg  label:                        cat
+ 3 key:                     bird_1.jpg  label:                       bird
+ 4 key:                      dog_2.jpg  label:                        dog
+
+     MATCH:
+
+                     cat_1.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+ NOT A MATCH:
+
+                     dog_1.jpg: 
+Real:                        dog   Classifier:                       bluetick
+
+                    bird_1.jpg: 
+Real:                       bird   Classifier:                      bee eater
+
+                     dog_2.jpg: 
+Real:                        dog   Classifier: seashore, coast, seacoast, sea-coast
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                     cat_1.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                     dog_1.jpg: 
+Real:                        dog   Classifier:                       bluetick  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    bird_1.jpg: 
+Real:                       bird   Classifier:                      bee eater  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                     dog_2.jpg: 
+Real:                        dog   Classifier: seashore, coast, seacoast, sea-coast  
+PetLabelDog: 1  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+Results Summary
+----------------------------------------
+Model architecture: resnet
+Total images: 4
+Dog images: 2
+Not-dog images: 2
+Correct label matches: 1
+Correctly classified dogs: 1
+Correctly classified not-dogs: 2
+Correctly classified breeds: 0
+
+Accuracy
+----------------------------------------
+Dog accuracy: 50.0
+Not-dog accuracy: 100.0
+Breed accuracy: 0.0
+Overall match: 25.0
+
+Incorrectly Classified Dogs
+----------------------------------------
+dog_2.jpg Pet label: dog Classifier label: seashore, coast, seacoast, sea-coast
+
+Incorrectly Classified Dog Breeds
+----------------------------------------
+dog_1.jpg Pet label: dog Classifier label: bluetick
+dog_2.jpg Pet label: dog Classifier label: seashore, coast, seacoast, sea-coast
+
+** Total Elapsed Runtime: 0:0:6
