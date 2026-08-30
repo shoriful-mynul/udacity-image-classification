@@ -83,6 +83,18 @@ Although VGG achieved the highest breed accuracy, some individual dog breeds wer
 
 These results show that the classifier can correctly recognize an image as a dog even when it does not identify the exact breed.
 
+## Uploaded Image Testing
+
+Additional images were placed in the `uploaded_images/` directory and classified using all three pretrained CNN architectures.
+
+The generated outputs are saved in:
+
+- `alexnet_uploaded-images.txt`
+- `resnet_uploaded-images.txt`
+- `vgg_uploaded-images.txt`
+
+The test images used for this additional evaluation are stored in `uploaded_images/`.
+
 ## How to Run
 
 Run the main evaluation program from the project directory:
@@ -100,6 +112,16 @@ python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 ```
 
 The program reports the number of images, dog and non-dog classification results, breed classification results, accuracy values, and incorrectly classified examples.
+
+### Running the Uploaded Images
+
+The same program can be used with the additional uploaded images:
+
+```bash
+python check_images.py --dir uploaded_images/ --arch vgg --dogfile dognames.txt
+```
+
+Replace `vgg` with `alexnet` or `resnet` to test another architecture.
 
 ## Running All Three Models
 
@@ -128,6 +150,12 @@ udacity-image-classification/
 │   ├── Boston_terrier_02259.jpg
 │   ├── ...
 │
+├── uploaded_images/
+│   ├── bird_1.jpg
+│   ├── cat_1.jpg
+│   ├── dog_1.jpg
+│   └── dog_2.jpg
+│
 ├── adjust_results4_isadog.py
 ├── calculates_results_stats.py
 ├── check_images.py
@@ -141,9 +169,18 @@ udacity-image-classification/
 ├── print_functions_for_lab_checks.py
 ├── print_results.py
 ├── test_classifier.py
+│
+├── alexnet_pet-images.txt
+├── resnet_pet-images.txt
+├── vgg_pet-images.txt
+├── alexnet_uploaded-images.txt
+├── resnet_uploaded-images.txt
+└── vgg_uploaded-images.txt
+│
 ├── run_models_batch.sh
 ├── run_models_batch.bat
-└── README.md
+├── run_models_batch_uploaded.sh
+└── run_models_batch_uploaded.bat
 ```
 
 ## Required Files
@@ -159,7 +196,8 @@ The main project components include:
 - `adjust_results4_isadog.py` — determines dog versus non-dog classification.
 - `print_results.py` — displays classification results.
 - `dognames.txt` — contains accepted dog breed names and classifier labels.
-- `pet_images/` — contains the test images.
+- `pet_images/` — contains the original 40 test images.
+- `uploaded_images/` — contains the additional images used for uploaded-image testing.
 
 ## Technologies Used
 
